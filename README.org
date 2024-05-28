@@ -10,7 +10,7 @@ On the off chance something in here is new, it's all public domain as far as I'm
 
 Troy Brumley  
 Blametroi@gmail.com  
-March 2024  
+May 2024  
 
 So let it be written, so let it be done.
 
@@ -34,3 +34,6 @@ Over the years I've seen many configs and read many articles and blog posts. How
 
 And so I'm *really* rolling my own Emacs configuration. Fun has commenced. 
 
+#+CAPTION: The muppets bring you the ultimate ear worm
+#+NAME:   happiness
+[[./keep-calm-and-mahna-mahna.png]]

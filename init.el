@@ -580,7 +580,6 @@ region."
 (use-package geiser-guile)
 
 (use-package flymake-guile
-  :pin gnu
   :after geiser-guile)
 
 ;; for c/c++
