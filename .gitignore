@@ -10,3 +10,4 @@
 .lsp-se*
 /emojis/
 *.plstore
+/hackernews/
