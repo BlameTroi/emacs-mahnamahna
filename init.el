@@ -120,6 +120,11 @@
  (expand-file-name "troi-init/cformat.el" user-emacs-directory))
 
 
+;; fortran (f90) programming
+(load-file
+ (expand-file-name "troi-init/fartron.el" user-emacs-directory))
+
+
 ;; miscellaneous languages and modes, small stuff
 (load-file
  (expand-file-name "troi-init/miscellany.el" user-emacs-directory))
