@@ -144,6 +144,11 @@
  (expand-file-name "troi-init/tidder.el" user-emacs-directory))
 
 
+;; shell stuff
+(load-file
+ (expand-file-name "troi-init/shellac.el" user-emacs-directory))
+
+
 ;; finally -- customization
 
 ;; i'm not a fan of splitting things between customization and the
