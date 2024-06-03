@@ -27,7 +27,10 @@
 (use-package eglot
   :pin gnu
   ;; TODO eglot-ensure for all prog-modes considered bad, be specific.
-  :hook (prog-mode . eglot-ensure)
+  :hook
+  (c-mode . eglot-ensure) (c++-mode . eglot-ensure)
+  (c-ts-mode . eglot-ensure) (c++-ts-mode . eglot-ensure)
+  (f90-mode . eglot-ensure)
   :bind (:map eglot-mode-map
               ("C-c c a" . eglot-code-actions)
               ("C-c c o" . eglot-code-actions-organize-imports)

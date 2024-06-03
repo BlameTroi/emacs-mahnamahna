@@ -18,8 +18,7 @@
 ;;; Code:
 
 
-(use-package reformatter
-  :defer t)
+(use-package reformatter)
 
 (use-package astyle
   :after reformatter
