@@ -11,6 +11,8 @@
 ;; mode theme. of late i've found that the acme theme is pretty
 ;; usable.
 
+;; trying to switch from all the icons to nerd icons
+
 ;;; Code:
 
 
@@ -23,22 +25,41 @@
 ;; icons and nerdish fonts.
 ;; TODO. are the nerd font based packages better than all the icons?
 
+;; (when (display-graphic-p)
+;;   (global-prettify-symbols-mode t)
+;;   (use-package all-the-icons)
+;;   (use-package all-the-icons-dired
+;;     :after all-the-icons
+;;     :diminish
+;;     :hook
+;;     (dired-mode . all-the-icons-dired-mode))
+;;   (use-package all-the-icons-ibuffer
+;;     :after all-the-icons
+;;     :diminish
+;;     :init (all-the-icons-ibuffer-mode 1))
+;;   (use-package diredfl
+;;     :diminish
+;;     :init (diredfl-global-mode 1)))
+
+;; have not added corfu yet
 (when (display-graphic-p)
   (global-prettify-symbols-mode t)
-  (use-package all-the-icons)
-  (use-package all-the-icons-dired
-    :after all-the-icons
-    :diminish
+  (use-package nerd-icons
+    :custom
+    (nerd-icons-font-family "Symbols Nerd Font Mono"))
+  (use-package nerd-icons-dired
+    :after nerd-icons
     :hook
-    (dired-mode . all-the-icons-dired-mode))
-  (use-package all-the-icons-ibuffer
-    :after all-the-icons
-    :diminish
-    :init (all-the-icons-ibuffer-mode 1))
-  (use-package diredfl
-    :diminish
-    :init (diredfl-global-mode 1)))
-
+    (dired-mode . nerd-icons-dired-mode))
+  (use-package nerd-icons-ibuffer
+    :after nerd-icons
+    :hook (ibuffer-mode . nerd-icons-ibuffer-mode))
+  (use-package nerd-icons-completion
+    :after marginalia
+    :config
+    (nerd-icons-completion-mode)
+    (add-hook 'marginalia-mode-hook #'nerd-icons-completion-marginalia-setup))
+  )
 
 ;; faces -- text size and font selection.
 

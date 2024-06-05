@@ -46,7 +46,6 @@
 ")
 
 
-
 ;; use-package, not straight or elpaca. it works for me.
 (load-file
  (expand-file-name "troi-init/packaging.el" user-emacs-directory))
@@ -147,7 +146,8 @@
  (expand-file-name "troi-init/hn.el" user-emacs-directory))
 (load-file
  (expand-file-name "troi-init/tidder.el" user-emacs-directory))
-
+(load-file
+ (expand-file-name "troi-init/idohow.el" user-emacs-directory))
 
 ;; shell stuff
 (load-file
