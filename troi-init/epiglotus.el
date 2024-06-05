@@ -36,6 +36,8 @@
               ("C-c c o" . eglot-code-actions-organize-imports)
               ("C-c c r" . eglot-rename))
   :custom
+  ;; log size 0 disables logging
+  (eglot-events-buffer-config '(:size 0 :format short))
   (eglot-autoshutdown t)
   (eglot-ignored-server-capabilities '(:documentFormattingProvider
                                        :documentRangeFormattingProvider

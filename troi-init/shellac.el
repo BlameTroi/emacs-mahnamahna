@@ -8,11 +8,11 @@
 ;;; Code:
 
 
-(use-package eat
-  :defer t
-  :hook
-  (eshell-load eat-eshell-mode)
-  (eshell-load eat-eshell-visual-command-mode))
+;;(use-package eat
+;;  :defer t
+;;  :hook
+;;  (eshell-load . eat-eshell-mode)
+;;  (eshell-load . eat-eshell-visual-command-mode))
 
 
 (provide 'shellac)

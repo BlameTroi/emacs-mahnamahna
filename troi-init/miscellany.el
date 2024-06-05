@@ -9,6 +9,12 @@
 ;;; Code:
 
 
+(use-package form-feed-st
+  :defer t
+  :diminish
+  :hook (prog-mode . form-feed-st-mode))
+
+
 (use-package sml-mode
   :defer t
   :mode "\\.sml\\'"

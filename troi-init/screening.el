@@ -7,6 +7,7 @@
 ;;; Code:
 
 (use-package elscreen
+  :defer t
   :custom
   (elscreen-tab-display-control nil))
 
