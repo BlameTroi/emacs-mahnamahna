@@ -67,11 +67,6 @@
  (expand-file-name "troi-init/setqopts.el" user-emacs-directory))
 
 
-;; trying elscreen out
-(load-file
- (expand-file-name "troi-init/screening.el" user-emacs-directory))
-
-
 ;; themes, colors, faces, icons
 (load-file
  (expand-file-name "troi-init/colorful.el" user-emacs-directory))
@@ -148,6 +143,7 @@
  (expand-file-name "troi-init/tidder.el" user-emacs-directory))
 (load-file
  (expand-file-name "troi-init/idohow.el" user-emacs-directory))
+
 
 ;; shell stuff
 (load-file

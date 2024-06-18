@@ -9,6 +9,13 @@
 ;;; Code:
 
 
+(use-package imenu-list
+  :defer t
+  :diminish
+  :hook (prog-mode . imenu-list-minor-mode)
+  :custom
+  (imenu-list-size 0.15))
+
 (use-package form-feed-st
   :defer t
   :diminish
