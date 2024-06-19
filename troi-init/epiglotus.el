@@ -67,6 +67,7 @@
 (use-package flymake
   :pin gnu
   :hook (prog-mode . flymake-mode)
+  :custom (flymake-mode-line-lighter "FM")
   :bind (:map flymake-mode-map
               ("C-c ! n" . flymake-goto-next-error)
               ("C-c ! p" . flymake-goto-prev-error)

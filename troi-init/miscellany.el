@@ -11,7 +11,7 @@
 
 (use-package imenu-list
   :defer t
-  :diminish
+  :diminish ""
   :hook (prog-mode . imenu-list-minor-mode)
   :custom
   (imenu-list-size 0.15))

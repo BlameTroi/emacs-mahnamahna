@@ -23,7 +23,7 @@
 (use-package astyle
   :after reformatter
   :when (executable-find "astyle")
-  :diminish
+  :diminish (astyle-on-save-mode . "as")
   :hook
   (c-ts-mode . astyle-on-save-mode)
   (c++-ts-mode . astyle-on-save-mode)
