@@ -48,10 +48,12 @@
     :custom
     (nerd-icons-font-family "Symbols Nerd Font Mono"))
   (use-package nerd-icons-dired
+    :diminish
     :after nerd-icons
     :hook
     (dired-mode . nerd-icons-dired-mode))
   (use-package nerd-icons-ibuffer
+    :diminish
     :after nerd-icons
     :hook (ibuffer-mode . nerd-icons-ibuffer-mode))
   (use-package nerd-icons-completion
