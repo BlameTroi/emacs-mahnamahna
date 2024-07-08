@@ -15,31 +15,31 @@
 
 ;;; Code:
 
+;;(when (display-graphic-p)
+;;(use-package notink-theme
+;;  :config
+;;  (load-theme 'notink t))
 
-(use-package acme-theme
-  :config
-  (load-theme 'acme t)
-  (setopt acme-theme-black-fg t))
+(when (display-graphic-p)
+  (use-package acme-theme
+    :config
+    (load-theme 'acme t)
+    (setopt acme-theme-black-fg t)
+    (custom-set-faces
+     '(hl-line ((t (
+                    :inherit highlight
+                    :extend t
+                    :background "LightGoldenrod2"
+                    :foreground "black"))))
+     )))
 
+;;(use-package nano-theme
+;;  :config
+;;  (load-theme 'nano-light t))
+;;)
 
-;; icons and nerdish fonts.
-;; TODO. are the nerd font based packages better than all the icons?
-
-;; (when (display-graphic-p)
-;;   (global-prettify-symbols-mode t)
-;;   (use-package all-the-icons)
-;;   (use-package all-the-icons-dired
-;;     :after all-the-icons
-;;     :diminish
-;;     :hook
-;;     (dired-mode . all-the-icons-dired-mode))
-;;   (use-package all-the-icons-ibuffer
-;;     :after all-the-icons
-;;     :diminish
-;;     :init (all-the-icons-ibuffer-mode 1))
-;;   (use-package diredfl
-;;     :diminish
-;;     :init (diredfl-global-mode 1)))
+;; icons and nerdish fonts. i was using all-the-icons but i find
+;; the nerd-xxx sets better.
 
 ;; have not added corfu yet
 (when (display-graphic-p)
@@ -74,8 +74,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "IOSEVKA NF" :foundry "nil" :slant normal :weight regular :height 220 :width normal))))
+ ;;'(compilation-error ((t (:background "gray80" :foreground "Red"))))
+ ;;'(flymake-error ((t (:underline (:color "Red" :style wave :position nil)))))
+ ;;'(font-lock-comment-face ((t (:foreground "#707070" :slant oblique))))
  '(font-lock-comment-face ((t (:foreground "#005500" :slant oblique))))
- '(hl-line ((t (:inherit highlight :extend t :background "LightGoldenrod2" :foreground "black"))))
+;;  '(hl-line ((t (:inherit highlight :extend t :background "LightGoldenrod2" :foreground "black"))))
  '(variable-pitch ((t (:weight regular :height 250 :width normal :family "IOSEVKA NF")))))
 
 ;; TODO: the above is the only way i can get acme-theme to show the highlight
@@ -89,16 +92,19 @@
 ;; the hook here and use more specific hooks elsewhere.
 ;; TODO: this is not very distinct with the acme theme.
 
-(use-package rainbow-delimiters
-  :defer t
-  :hook (prog-mode rainbow-delimiter-mode))
+;; (use-package rainbow-delimiters
+;;   :defer t
+;;   :hook (prog-mode rainbow-delimiter-mode))
 
 
 ;; hl-todo has a problem with the acme theme, it isn't distinct from
 ;; a marked region. i've fixed that in customization but that needs to be
 ;; extracted and done properly. TODO see the custom-set-faces earlier in
 ;; this file.
-
+;;
+;; '(font-lock-comment-face ((t (:foreground "#005500" :slant oblique))))
+;;  '(hl-line ((t (:inherit highlight :extend t :background "LightGoldenrod2" :foreground "black"))))
+;;
 ;; define colors for TODO keywords and get the keywords
 ;; squared away to my preferences.
 

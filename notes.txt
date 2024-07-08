@@ -1,0 +1,14 @@
+from a reddit post on simplifying/decolorizing themes to
+reduce the clown barf color overload that some induce.
+
+(use-package font-lock
+  :custom-face
+  (font-lock-keyword-face ((t (:foreground unspecified))))
+  (font-lock-operator-face ((t (:foreground unspecified))))
+  (font-lock-type-face ((t (:foreground unspecified))))
+  (font-lock-variable-name-face ((t (:foreground unspecified))))
+  (font-lock-constant-face ((t (:foreground unspecified))))
+  (font-lock-number-face ((t (:foreground unspecified))))
+  (font-lock-doc-face ((t (:foreground unspecified :inherit 'font-lock-comment-face))))
+  (font-lock-preprocessor-face ((t (:foreground unspecified))))
+  (font-lock-builtin-face ((t (:foreground unspecified)))))

@@ -52,7 +52,7 @@
 
 
 ;; macos is a horse of an entirely different color
-(when (memq window-system '(mac ns x))
+(when (eq system-type 'darwin)
   (load-file
    (expand-file-name "troi-init/macos.el" user-emacs-directory)))
 
