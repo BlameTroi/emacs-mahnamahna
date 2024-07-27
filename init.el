@@ -61,7 +61,6 @@
 (load-file
  (expand-file-name "troi-init/filesys.el" user-emacs-directory))
 
-
 ;; options (setq/setopt) that don't fit elsewhere.
 (load-file
  (expand-file-name "troi-init/setqopts.el" user-emacs-directory))
@@ -129,25 +128,29 @@
  (expand-file-name "troi-init/miscellany.el" user-emacs-directory))
 
 
-;; org mode
+;; org and markdown and other textual modes
 (load-file
  (expand-file-name "troi-init/orgness.el" user-emacs-directory))
 
 
-;; various applications
-(load-file
- (expand-file-name "troi-init/feedme.el" user-emacs-directory))
-(load-file
- (expand-file-name "troi-init/hn.el" user-emacs-directory))
-(load-file
- (expand-file-name "troi-init/tidder.el" user-emacs-directory))
-(load-file
- (expand-file-name "troi-init/idohow.el" user-emacs-directory))
+;; various applications -- turns out i just use the web interfaces for
+;; things on a tablet, so these add no value and i'm removing the
+;; packages but leaving the init files for reference in case i change
+;; my habits.
+;;
+;;(load-file
+;; (expand-file-name "troi-init/feedme.el" user-emacs-directory))
+;;(load-file
+;; (expand-file-name "troi-init/hn.el" user-emacs-directory))
+;;(load-file
+;; (expand-file-name "troi-init/tidder.el" user-emacs-directory))
+;;(load-file
+;; (expand-file-name "troi-init/idohow.el" user-emacs-directory))
 
 
 ;; shell stuff
-(load-file
- (expand-file-name "troi-init/shellac.el" user-emacs-directory))
+;;(load-file
+;; (expand-file-name "troi-init/shellac.el" user-emacs-directory))
 
 
 ;; finally -- customization

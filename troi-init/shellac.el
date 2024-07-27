@@ -5,6 +5,8 @@
 ;; eat is apparently a very good all emacs terminal emulator, giving it a try and
 ;; also collecting any tweaks i make for eshell here.
 
+;; and i'm not using eat and i don't really have any shell mods worth mentioning.
+
 ;;; Code:
 
 

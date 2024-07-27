@@ -3,7 +3,7 @@
 ;;; Commentary:
 
 ;; those things that are mac specific. the key remaps for various keys that
-;; the mac desktop wants are pending TODO.
+;; the mac desktop wants a work in progress.
 
 ;;; Code:
 
@@ -12,6 +12,7 @@
 
 (use-package exec-path-from-shell
   :demand t)
+
 (setopt exec-path-from-shell-arguments nil)
 (exec-path-from-shell-initialize)
 
@@ -19,10 +20,24 @@
 ;; remap modifier keys. i change caps lock to control in the macos
 ;; keyboard settings.
 
-(setopt ns-alternate-modifier 'alt)
-(setopt ns-command-modifier 'meta)
-(setopt ns-function-modifier 'hyper)
-(setopt ns-right-alternate-modifier 'super)
+;; a standard keyboard is control fn os alt |spacebar| alt(gr) os menu control
+;;
+;; using karbiner i've changed the bottom row thusly:
+;;
+;; fn->control
+;; control->fn
+;; option->command
+;; command->alt
+;; spbr
+;; command->unchanged
+;; option->unchanged
+;;
+;; and so i don't need these anymore, as near as i can tell:
+;;;
+;;(setopt ns-alternate-modifier 'alt)
+;;(setopt ns-command-modifier 'meta)
+;;(setopt ns-function-modifier 'hyper)
+;;(setopt ns-right-alternate-modifier 'super)
 
 
 ;; save some screen space.

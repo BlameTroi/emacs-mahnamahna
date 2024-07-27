@@ -7,8 +7,8 @@
 ;;; Code:
 
 
-(use-package md4rd
-  :defer t)
+;;(use-package md4rd
+;;  :defer t)
 
 
 (provide 'tidder)

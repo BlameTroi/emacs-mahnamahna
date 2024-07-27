@@ -12,6 +12,12 @@
 
 ;;; Code:
 
+
+;; a biggie
+
+(setopt disabled-command-function nil)
+
+
 ;; ui visuals and such:
 
 (setopt x-underline-at-descent-line nil)

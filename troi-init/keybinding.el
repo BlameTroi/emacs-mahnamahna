@@ -19,7 +19,8 @@
 ;; with a modifier if they weren't already used elsewhere. arrows seem
 ;; quick enough to me.
 ;;
-;; i am using more vimish c-f and c-b for screen scrolling.
+;; i am using more vimish c-f and c-b, with c-v as a synonym for c-b,
+;; for screen scrolling.
 ;;
 ;; see: https://enzuru.medium.com/emacs-in-a-few-dozen-keystrokes-and-why-some-of-you-should-just-use-vim-14b9af30be70
 
@@ -45,9 +46,8 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 
-
 ;; probably the best package for emacs newbies and those of us with
-;; memory issues.
+;; memory issues. turns out it's moved into base for emacs 30.
 
 (use-package which-key
   :diminish

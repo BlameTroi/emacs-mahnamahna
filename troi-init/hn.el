@@ -7,8 +7,8 @@
 ;;; Code:
 
 
-(use-package hackernews
-  :defer t)
+;;(use-package hackernews
+;;  :defer t)
 
 
 (provide 'hn.el)

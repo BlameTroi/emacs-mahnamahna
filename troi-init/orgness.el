@@ -5,7 +5,15 @@
 ;; org and close friends. i'm not really using org much, but it's
 ;; around if i need it.
 
+;; i've tried to use org or markdown and neither really appeals to me.
+;; plain text gets the job done well enough. reducing this to a
+;; minimum and deferred configuration for those times i can't avoid
+;; org.
+
 ;; org is built in but it should be refreshed from gnu elpa.
+
+;; markdown is pretty much the same as org as far as i am concerned.
+;; it's here if it's needed.
 
 ;;; Code:
 
@@ -39,20 +47,13 @@
   ;; (define-key org-mode-map (kbd "C-c C-g C-r") 'org-shiftmetaright)
   )
 
-
-(use-package org-modern
-  :pin gnu
-  :after org
-  :hook
-  (org-mode . org-modern-mode)
-   (org-agenda-finalize . org-modern-agend))
-
-
-;; Easy insertion of weblinks
-(use-package org-web-tools
-  :after org
-  :bind
-  (("C-c w w" . org-web-tools-insert-link-for-url)))
+(use-package markdown-mode
+  :pin nongnu
+  :defer t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown")
+  :bind (:map markdown-mode-map
+         ("C-c C-e" . markdown-do)))
 
 
 (provide 'orgness)

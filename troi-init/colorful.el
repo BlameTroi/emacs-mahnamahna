@@ -32,6 +32,11 @@
                     :background "LightGoldenrod2"
                     :foreground "black"))))
      )))
+;;'(compilation-error ((t (:background "gray80" :foreground "Red"))))
+;;'(flymake-error ((t (:underline (:color "Red" :style wave :position nil)))))
+;;'(font-lock-comment-face ((t (:foreground "#707070" :slant oblique))))
+;;'(font-lock-comment-face ((t (:foreground "#005500" :slant oblique))))
+
 
 ;;(use-package nano-theme
 ;;  :config
