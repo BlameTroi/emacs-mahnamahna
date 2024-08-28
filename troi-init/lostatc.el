@@ -18,8 +18,8 @@
 ;; indent style is set here in preference to whatever clang-format would
 ;; do if i used it. i prefer k&r and do my real formatting from astyle.
 
-(setopt c-ts-mode-indent-offset 3)
-(setopt c-ts-mode-indent-style 'k&r)
+;; (setopt c-ts-mode-indent-offset 3)
+(setopt c-ts-mode-indent-style 'LINUX)
 
 
 ;; this is really C specific, 3 is confusing, 1 and 2 are unhelpful.

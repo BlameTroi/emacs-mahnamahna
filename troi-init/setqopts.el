@@ -73,7 +73,7 @@
 (setopt completions-format 'one-column)
 (setopt completions-group t)
 (setopt completion-auto-select 'second-tab)
-(setopt tab-always-indent 'complete)
+;;(setopt tab-always-indent 'complete)
 
 
 ;;TODO  maybe this should be in keybindings?

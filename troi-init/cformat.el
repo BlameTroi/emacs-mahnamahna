@@ -21,28 +21,40 @@
 (use-package reformatter)
 
 (use-package astyle
-  :after reformatter
-  :when (executable-find "astyle")
-  :diminish (astyle-on-save-mode . "as")
-  :hook
-  (c-ts-mode . astyle-on-save-mode)
-  (c++-ts-mode . astyle-on-save-mode)
-  :custom
-  (astyle-style "attach")              ;; --style=attach
-  (astyle-indent 3)                    ;; -s3
-  (astyle-custom-args '(
-                        "-xn"          ;; --attach-namespaces
-                        "-xc"          ;; --attach-classes
-                        "-xk"          ;; --attach-extern-c
-                        "-xV"          ;; --attach-closing-while     } while ();
-                        "-H"           ;; --pad-header               if ()
-                        "-U"           ;; --unpad-paren
-                        "-j"           ;; --add-braces
-                        "-xB"          ;; --break-return-type
-                        "-xD"          ;; --break-return-type-decl
-                        "-xg"          ;; --pad-comma
-                        ;;"-p"           ;; --pad-oper  (implies -xg --pad-comma)
-                        )))
+        :after reformatter
+        :when (executable-find "astyle")
+        :diminish (astyle-on-save-mode . "as")
+        )
+;; (c-ts-mode . astyle-on-save-mode)
+;; (c++-ts-mode . astyle-on-save-mode)
+;; :custom
+;; (astyle-style "knf")              ;; or linux
+;; (astyle-indent "tab")             ;; might as well go whole hog
+;; (astyle-custom-args '(
+;;                              "-xn"          ;; --attach-namespaces
+;;                              "-xc"          ;; --attach-classes
+;;                              "-xk"          ;; --attach-extern-c
+;;                              "-xV"          ;; --attach-closing-while     } while ();
+;;                              "-H"           ;; --pad-header               if ()
+;;                              "-U"           ;; --unpad-paren
+;;                              "-xB"          ;; --break-return-type
+;;                              "-xD"          ;; --break-return-type-decl
+;;                              )))
+;; (astyle-style "attach")              ;; --style=attach
+;; (astyle-indent 3)                    ;; -s3
+;; (astyle-custom-args '(
+;;                       "-xn"          ;; --attach-namespaces
+;;                       "-xc"          ;; --attach-classes
+;;                       "-xk"          ;; --attach-extern-c
+;;                       "-xV"          ;; --attach-closing-while     } while ();
+;;                       "-H"           ;; --pad-header               if ()
+;;                       "-U"           ;; --unpad-paren
+;;                       "-j"           ;; --add-braces
+;;                       "-xB"          ;; --break-return-type
+;;                       "-xD"          ;; --break-return-type-decl
+;;                       "-xg"          ;; --pad-comma
+;;                       ;;"-p"           ;; --pad-oper  (implies -xg --pad-comma)
+;;                       ))
 
 
 ;; rebox2 kept for future reference if i want to try to get it working.
