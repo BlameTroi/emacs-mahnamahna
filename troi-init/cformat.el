@@ -20,6 +20,9 @@
 
 (use-package reformatter)
 
+;; i've set up a .astylerc file and am running manually for a bit,
+;; but leaving this in place but disabled the on save.
+
 (use-package astyle
         :after reformatter
         :when (executable-find "astyle")

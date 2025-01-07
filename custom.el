@@ -3,17 +3,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(ace-window acme-theme astyle cape cobol-mode corfu diffview diminish
-                diredfl editorconfig eglot eldoc-box emacsshot
-                embark-consult exec-path-from-shell flymake-guile
-                form-feed form-feed-st free-keys geiser-guile gnuplot
-                hl-todo imenu-list json-mode json-reformat magit
-                marginalia markdown-mode nerd-icons-completion
-                nerd-icons-corfu nerd-icons-dired nerd-icons-ibuffer
-                org rainbow-delimiters rainbow-mode sml-basis sml-mode
-                undo-tree vertico vimish-fold which-key ws-butler
-                ztree)))
+ '(c-default-style nil)
+ '(c-ignore-auto-fill nil)
+ '(c-mark-wrong-style-of-comment t)
+ '(c-require-final-newline nil)
+ '(c-ts-mode-indent-style 'Linux))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
